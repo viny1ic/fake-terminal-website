@@ -26,7 +26,7 @@ var configs = (function () {
         rmdir_help: "Remove directory, this command will only work if the folders are empty.",
         touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: "Execute a command as the superuser.",
-        welcome: "Welcome to my website! :)\nBecause conventional portfolio websites are too cliche.\nMy name is Vinayak Dubey.\nI am a second year CSE student at VIT vellore.\n\nExecute the 'help' command for assistance with the terminal or use the more user-friendly colored sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.",
+        welcome: "Welcome to my portfolio terminal! :)\nBecause conventional portfolio websites are too cliche.\nMy name is Vinayak Dubey.\nI am a second year CSE student at VIT vellore.\n\nExecute the 'help' command for assistance with the terminal or use the more user-friendly colored sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.\nNOTE: do NOT open welcome_message.txt. You will be teleported to the matrix",
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: command not found.",
@@ -67,11 +67,13 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
+        // "welcome_message.txt": "Welcome to my website! :)\nBecause conventional portfolio websites are too cliche.\nMy name is Vinayak Dubey.\nI am a second year CSE student at VIT vellore.\n\nExecute the 'help' command for assistance with the terminal or use the more user-friendly colored sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.",
         "about.txt": "Hello there! My name is Vinayak Dubey. I am a second year CSE student at VIT vellore.\nApart from college academics, i like to hone my skills in Cybersecurity, Ethcial hacking, Penetration testing, robotics and music\nIf you'd like to connect with me or collaborate please reach out.\nI am open to freelance and part time work. ",
         // "getting_started.txt": "First, go to js/main.js and replace all the text on both singleton vars.\n- configs: All the text used on the website.\n- files: All the fake files used on the website. These files are also used to be listed on the sidenav.\nAlso please notice if a file content is a raw URL, when clicked/concatenated it will be opened on a new tab.\nDon't forget also to:\n- Change the page title on the index.html file\n- Change the website color on the css/main.css\n- Change the images located at the img folder. The suggested sizes are 150x150 for the avatar and 32x32/16x16 for the favicon.",
         "contact.txt": "vinayak.dubey2019@vitstudent.ac.in;",
         "linkedIn.txt": "https://www.linkedin.com/in/vinayak-dubey-83b3a9190/",
         "github.txt": "https://github.com/viny1ic"
+        
     };
     return {
         getInstance: function (options) {
